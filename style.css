@@ -1,49 +1,134 @@
+/* PALETTE */
 :root {
   --primary: rgb(19,19,19);
   --secondary: rgb(255,255,255);
-  --heading-size: 25px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
   
-  header {
-    background-color: var(--secondary);
-    height: 10vh;
-  }
+/* HEADER */
+header {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid orangered ;
+}
+
+.socialNetworks ul {
+  display: flex;
+  align-items: center;
+  margin-right: 45px;
+}
+
+.socialNetworks img {
+  width: 27px;
+  height: 27px;
+}
+
+/* NAV */
+.navHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: var(--background);
+}
+
+.navHeader li {
+  font-size: 14px;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+  height: 70px;
+  width: 280px;
+}
+.first img {
+  display: flex;
+  justify-content: flex-start;
+  height: 28px;
+}
+
+.second {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  word-spacing: 5px;
+  margin-right: 30px;
+  width: 370px;
+  height: 100px;
   
-  main {
-    background-color: cadetblue;
-    min-height: 80vh;
-  }
-  
-  footer {
-    background-color: tomato;
-    height: 10vh;
-  }
-  
-  h1 {
-    text-align: center;
-    padding-top: 16px;
-    color: var(--secondary);
-    font-size: var(--heading-size);
-  }
-  
-  p {
-    text-align: center;
-    padding-top: 32px;
-  }
-  
-  body {
-    background-color: var(--primary);
-    color: var(--tertiary);
-  }
-  
-  p {
-    color: var(--tertiary);
-  }
-  
+}
+.leftmenu li {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.third {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 30px;
+  width: 450px;
+  height: 100px;
+}
+.rightmenu li {
+  display: inline-flex;
+  padding-right: 25px;
+  align-items: center;
+}
+.fourth {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 45px;
+  height: 70px;
+  width: 280px;
+}
+.fourth img {
+  display: flex;
+  margin-left: 15px;
+  height: 30px;
+  width: 30px;
+}
+
+.Hamburger img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+}
