@@ -382,17 +382,17 @@ input::placeholder {
 
 .manueljimena {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
-margin-bottom: 2%;
+  border-top: none;
 }
- 
-.github {
-  color:aqua
+
+.github img {
+  width: 25px;
 }
 
 /* MWDIA QUERY */
